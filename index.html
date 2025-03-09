@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason Vu</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/png" sizes="16x16">
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Main -->
+    <main>
+        <!-- sidebar -->
+        <aside class="sidebar" data-sidebar>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="./assets/images/my-avatar.png" alt="me" width="80">
+                </figure>
+                <div class="info-content">
+                    <h1 class="name" title="Jason Vu">Jason Vu</h1>
+                    <p class="title">Software Developer</p>
+                </div>
+                <button class="info_more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+            </div>
+            <div class="sidebar-info_more">
+                <div class="separator"></div>
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+                            <a href="mailto:jasuovu@gmail.com" class="contact-link">jasuovu@gmail.com</a>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+                            <address>Sydney, NSW, Australia</address>
+                        </div>
+                    </li>
+                </ul>
+                <div class="separator"></div>
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="https://github.com/jasuovu" class="social-link" target="_blank" rel="noopener noreferrer">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://www.linkedin.com/in/jason2049/" class="social-link" target="_blank" rel="noopener noreferrer">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="mailto:jasuovu@gmail.com" class="social-link">
+                            <ion-icon name="mail"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!-- main content -->
+        <!-- navbar -->
+         <div class="main-content">
+            <nav class="navbar">
+                <div class="navbar-list">
+                    <li class="navbar-item">
+                        <button class="navbar-link active" data-nav-link>About</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Resume</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Projects</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Contact</button>
+                    </li>
+                </div>
+            </nav>
+            <!-- about section -->
+             <article class="about active" data-page="about">
+                <header>
+                    <h2 class="h2 article-title">About Me</h2>
+                </header>
+                <section class="about-text">
+                    <p id="typing-text"></p>
+                </section>
+                <section class="service">
+                    <h3 class="h3 service-title">What I'm Doing</h3>
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="./assets/images/icon-software.png" alt="software icon" width="40">
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Software Development</h4>
+                                <p class="service-item-text">
+                                    Looking to create fun and engaging software projects that's useful (or not) but I'm mainly focusing on backend development
+                                </p>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="./assets/images/icon-ai.png" alt="ai icon" width="40">
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">AI Development</h4>
+                                <p class="service-item-text">
+                                    Learning about the black box that is AI and building models for different specific tasks and applications
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+             </article>
+            <!-- resume section -->
+             <article class="resume" data-page="resume">
+                <header>
+                    <h2 class="h2 article-title">Resume</h2>
+                </header>
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="school-outline"></ion-icon>
+                        </div>
+                        <h3 class="h3">Education</h3>
+                    </div>
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">University of Technology Sydney</h4>
+                            <span>2021-2024</span>
+                            <p class="timeline-text">
+                                • Studied Bachelor of Computing Science (Honours) majoring in Enterprise Systems Development
+                            </p>
+                            <p class="timeline-text">
+                                • Awards: Dean’s List (2024), High Distinction Average, First Class Honours
+                            </p>
+                            <p class="timeline-text">
+                                • Notable Coursework: Data Structures & Algorithms, Object-Oriented Programming, Database, Networks, Artificial Intelligence, Software as a Service and Cloud Computing, Internet Programming
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="analytics-outline"></ion-icon>
+                        </div>
+                        <h3 class="h3">Experience</h3>
+                    </div>
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title"> Honours Researcher – Reinforcement Learning & AI</h4>
+                            <span>University of Technology Sydney | Feb 2024 - Nov 2024</span>
+                            <p class="timeline-text">
+                                • Contributed to UTS Artificial Intelligence research by developing a transfer learning framework for reinforcement learning (RL), applied to Street Fighter II and Fatal Fury 2
+                            </p>
+                            <p class="timeline-text">
+                                • Achieved a 99/100 thesis mark for optimizing Proximal Policy Optimization (PPO) algorithm, under the supervision of a Postdoctoral Researcher and was cross-reviewed and validated by FEIT Director of Education
+                            </p>
+                            <p class="timeline-text">
+                                • Engineered an AI agent from scratch that attained an 83% win rate over 100 games in Street Fighter II, outperforming baseline models (52%)
+                            </p>
+                            <p class="timeline-text">
+                                • Validated cross-game transfer learning by fine-tuning the agent on Fatal Fury 2, maintaining a 77% win rate, demonstrating retention of learned strategies
+                            </p>
+                            <p class="timeline-text">
+                                • Optimized training over 5 million timesteps using Optuna, reducing convergence times while analyzing game similarity and frame-level action spaces                            </p>
+                            <p class="timeline-text">
+                                • Utilised Python, Stable-Baselines3 with PyTorch, and OpenAI Gym to train and simulate environments locally, scaling computation with cloud GPUs via UTS iHPC (High Performance Computing) on Linux VM for efficient training
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+                <section class="skill">
+                    <h3 class="h3 skills-title">Technical Skills</h3>
+                    <ul class="skills-list content-card">
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Languages</h5>
+                                <p class="timeline-text">
+                                    (preferred): C# (familiar), TypeScript, JavaScript, Python, Java, C++, Swift, SQL, HTML/CSS, Bash
+                                </p>
+                            </div>
+                        </li>
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Database</h5>
+                                <p class="timeline-text">
+                                    PostgreSQL, MongoDB, Firebase
+                                </p>
+                            </div>
+                        </li>
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Libraries/Frameworks</h5>
+                                <p class="timeline-text">
+                                    .NET, ASP.NET, Entity Framework, React.js, Next.js
+                                </p>
+                            </div>
+                        </li>
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Developer Tools</h5>
+                                <p class="timeline-text">
+                                    Git, Linux/WSL2, VSCode, Visual Studio, Unity, Node.js, AWS, Azure, Docker
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <a href="./assets/docs/JasonVu_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                    <button class="resume-download">
+                        <ion-icon name="download-outline"></ion-icon>
+                        <span>View Resume</span>
+                    </button>
+                </a>
+             </article>
+            <!-- portfolio section -->
+             <article class="portfolio" data-page="projects">
+                <h2 class="h2 article-title">Projects</h2>
+                <section class="projects">
+                    <ul class="filter-list">
+                        <li class="filter-item">
+                            <button class="active" data-filter-btn>ALL</button>
+                        </li>
+                        <li class="filter-item">
+                            <button data-filter-btn>Web Development</button>
+                        </li>
+                        <li class="filter-item">
+                            <button data-filter-btn>Mobile</button>
+                        </li>
+                        <li class="filter-item">
+                            <button data-filter-btn>Games</button>
+                        </li>
+                        <li class="filter-item">
+                            <button data-filter-btn>Applications</button>
+                        </li>
+                        <li class="filter-item">
+                            <button data-filter-btn>AI</button>
+                        </li>
+                    </ul>
+                    <div class="filter-select-box">
+                        <button class="filter-select" data-select>
+                            <div class="select-value" data-select-value>Select Category</div>
+                            <div class="select-icon">
+                                <ion-icon name="chevron-down"></ion-icon>
+                            </div>
+                        </button>
+                        <ul class="select-list">
+                            <li class="select-item">
+                                <button data-select-item>All</button>
+                            </li>
+                            <li class="select-item">
+                                <button data-select-item>Web Development</button>
+                            </li>
+                            <li class="select-item">
+                                <button data-select-item>Mobile</button>
+                            </li>
+                            <li class="select-item">
+                                <button data-select-item>Games</button>
+                            </li>
+                            <li class="select-item">
+                                <button data-select-item>Applications</button>
+                            </li>
+                            <li class="select-item">
+                                <button data-select-item>AI</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="project-list">
+                        <li class="project-item active" data-filter-item
+                            data-category="web development" 
+                            >
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline" title="View"></ion-icon>
+                                    </div>
+                                    <img src="./assets/images/clarichat.png" alt="clarichat" loading="lazy" data-project-img>
+                                </figure>
+                                <h3 class="project-title" data-project-title>Clarichat</h3>
+                                <p class="project-category">Web Development</p>
+                            </a>
+                            <div data-project-text>
+                                <p>
+                                    Clarichat is a web application that simulated a behavioural job interview using an AI chatbot. 
+                                    The chatbot will then analyse the user's responses and provide feedback on their performance 
+                                    through multiple statistics. The application was built using React.js, Node.js, Firebase and 
+                                    integrating ChatGPT API to simulate interviews with contextual responses to 50+ questions based 
+                                    on the chosen role/position.
+                                </p>
+                                <p>
+                                    I collaborated in a team of 5 to develop an AI-driven web app in 14 weeks which we employed employed 
+                                    Agile methodologies with bi-weekly sprints on Azure Boards, managing code with Git/GitHub, working on individual 
+                                    branches, and merging updates to master for seamless integration. We also implemented CI/CD using Azure Pipelines 
+                                    and GitHub Actions, achieving over 95% pipeline success rate and 100% test coverage through automated unit testing 
+                                    and deployment. Firebase was utilised as the main database for this monolithic application which handled user 
+                                    authentication, updating of interview questions, responses, and history.
+                                </p>
+                                <p>
+                                    GitHub Link: <a href="https://github.com/alexalextran/Advanced-Software-Dev" class="portfolio-link" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-github"></ion-icon></a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="project-item active" data-filter-item data-category="applications">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="./assets/images/drumocat.png" alt="drumocat" loading="lazy" data-project-img>
+                                </figure>
+                                <h3 class="project-title" data-project-title>DrumoCat</h3>
+                                <p class="project-category">Applications</p>
+                            </a>
+                            <div data-project-text>
+                                <p>
+                                    The DrumoCat program is an interactive application developed in Processing that connects to a MIDI e-drum kit. At its core, 
+                                    the program features a cat character situated behind a drum kit, whose arms move to strike the corresponding drum parts on-screen 
+                                    with preloaded sound files (e.g., snare.wav, kick.wav) providing the audio.
+                                </p>
+                                <p>
+                                    Key features include recording drum inputs, saving sequences, and applying transformations like quantization (snapping beats to a tempo) 
+                                    and BPM adjustments (modifying timestamps rather than playback speed). Additional tools include an MP3 player, 
+                                    BPM tapper, metronome, intro trimming, and drumbeat visualizers.
+                                </p>
+                                <p>
+                                    Initially, implementing quantization seemed impossible when working with .wav or .mp3 files, as there was no direct access to 
+                                    manipulate individual drum sounds or timings. This limitation forced me to reevaluate my approach. Instead of recording system sound, 
+                                    I designed a system to record MIDI-like data by capturing the timestamp (in milliseconds), pitch (drum part), and velocity (strike intensity).
+                                    I created a MidiEvent class to store this data, along with an ArrayList called recordedEvents to log the input and another sequenceFiles 
+                                    list to manage loaded drum beats for manipulation. With the drumbeat stored in memory, quantization became feasible. 
+                                    To quantize, I calculated the duration of a quarter note in milliseconds based on the BPM using: 1 (ms) = 60,000 / BPM. 
+                                    For example, at 120 BPM, 1 beat = 500ms (4/4 time signature only). Quantizing snapped each event's timestamp to the nearest beat division.
+
+                                </p>
+                                <p>
+                                    GitHub Link: <a href="https://github.com/jasuovu/DrumoCat" class="portfolio-link" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-github"></ion-icon></a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="project-item active" data-filter-item data-category="mobile">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="./assets/images/thoughts.png" alt="thoughts" loading="lazy" data-project-img>
+                                </figure>
+                                <h3 class="project-title" data-project-title>Thoughts</h3>
+                                <p class="project-category">Mobile</p>
+                            </a>
+                            <div data-project-text>
+                                <p>
+                                    Thoughts is a thoughts/journal wellbeing manager, that organises a users thoughts and user that information to, personally help the user
+                                </p>
+                                <p>
+                                    Features: Users can write entries based on how they are feeling, including an entry of their day/context to how they are feeling and a 
+                                    selected mood to display how they felt. Users can also delete those same entries. Users can see their statistics regarding the entries. 
+                                    For example, percentages are calculated for each mood, the amount of entries per month, and total entries. Statistics are also calculated 
+                                    for each month, so users can filter by month and updates in real time. Users are also able to view the current weather and temperature 
+                                    for their local area. Users can talk to a specialised AI chatbot that will provide them with quality information and recommendations 
+                                    based on the information that the user gives them. Users can view their entries for each month based on a calendar UI; only dates that 
+                                    have entries will be clickable. When users click on a day that has entries, users can view their entries for the day and can update them.
+                                </p>
+                                <p>
+                                    This project was developed in collaboration with 2 other developers.
+                                </p>
+                                <p>
+                                    GitHub Link: <a href="https://github.com/alexalextran/Thoughts" class="portfolio-link" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-github"></ion-icon></a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="project-item active" data-filter-item data-category="games">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="./assets/images/pacstudent.png" alt="pacstudent" loading="lazy" data-project-img>
+                                </figure>
+                                <h3 class="project-title" data-project-title>PacStudent</h3>
+                                <p class="project-category">Games</p>
+                            </a>
+                            <div data-project-text>
+                                <p>
+                                    PacStudent was my introduction to game development and Unity, spanning three intense assessment tasks that pushed my skills to the limit. 
+                                    My spin-off reimagined Pac-Man with a dragon as the player and knights as the ghosts. Throughout the project, I managed Git branches for 
+                                    different features, structured the Unity project efficiently, and created custom sprites in Piskelapp. I also designed sound effects using 
+                                    BFXR and implemented core mechanics like movement, UI elements (score, lives, timer), and collision handling. Additionally, I added features 
+                                    like persistent high scores. This experience highlighted the complexity of even a "simple" game and reinforced the importance of planning, 
+                                    problem-solving, and continuous learning in game development.
+                                </p>
+                                <p>
+                                    GitHub Link: <a href="https://github.com/jasuovu/pacstudent" class="portfolio-link" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-github"></ion-icon></a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="project-item active" data-filter-item data-category="ai">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="./assets/images/honours.png" alt="honours" loading="lazy" data-project-img>
+                                </figure>
+                                <h3 class="project-title" data-project-title>Honours Thesis</h3>
+                                <p class="project-category">AI</p>
+                            </a>
+                            <div data-project-text>
+                                <p>
+                                    Title: Exploring Transfer Learning in Deep Reinforcement Learning for Fighting Games
+                                </p>
+                                <p>
+                                    My honours project takes on a journey through how I trained AI to master one game and then use that knowledge to dominate another. 
+                                    The two main games we are focusing on is Street Fighter II and Fatal Fury 2.
+                                </p>
+                                <p>
+                                    Methodology: To test transfer learning, I trained three models across two games—Street Fighter II and Fatal Fury 2—and used additional 
+                                    untrained models for comparison. A custom environment was developed, featuring preprocessing techniques like grayscaling, 
+                                    frame resizing, and stacking the last four frames. This gave the AI temporal context, allowing it to ‘see’ how the environment 
+                                    changes over time and react strategically.
+                                </p>
+                                <p>
+                                    Results: In Street Fighter II, the baseline model (M1) achieved a high win rate of 83%, compared to an empty model’s 52%. When tested on Fatal Fury 2 
+                                    without fine-tuning, the transferred model still outperformed the empty model on Fatal Fury 2 which averaged a 7%, where the Street Figher II 
+                                    model achieved a 34% win rate. Fine-tuning M1 by training the model on Fatal Fury (M3) improved this to 36%, but training from scratch on 
+                                    Fatal Fury (M2) yielded a slightly higher win rate of 39%. This demonstrates that although transfer learning without fine tuning yields 
+                                    strong performance when compared to the likes of an empty model, fine-tuning is essential for domain adaptation. But even then the model 
+                                    from scratch still outperformed the fine tuned model. 
+                                </p>
+                                <p>
+                                    However, there is an interesting observation. When training the model on Fatal Fury 2 with weights transferred from Street Fighter II (M3) 
+                                    compared to training a model from scratch on Fatal Fury 2 (M2),the model with transferred weights (M3) significantly outperformed the model 
+                                    trained from scratch until eventually they both broke even at around 2.644M timestep as seen in this graph, where the M3 is the red line and 
+                                    M2 is the blue line. A significant claim can be made highlighting that transfer learning does indeed work and does save a significant amount 
+                                    of time, as compared to just training the model from scratch (M2). I then tested M3 on Street Fighter II again to see if it retained the 
+                                    peformance it was initially trained on and surprising it did with a relative high win rate of 77%, proving transfer learning's generalisation.
+                                </p>
+                                <p>
+                                    Honours Thesis Link: <a href="./assets/docs/JasonVu_Honours.pdf" class="portfolio-link" target="_blank" rel="noopener noreferrer"><ion-icon name="book"></ion-icon></a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="project-item active" data-filter-item data-category="">
+                            <span>WIP UNDER CONSTRUCTION!!</span>
+                        </li>
+                    </ul>
+                </section>
+                <!-- modal -->
+                <div class="modal-container" data-modal-container>
+                    <div class="overlay" data-overlay></div>
+                    <section class="projects-modal">
+                        <button class="modal-close-btn" data-modal-close-btn>
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+                        <div class="modal-img-wrapper">
+                            <figure class="modal-project-img">
+                                <img src="./assets/images/clarichat.png" alt="clarichat" loading="lazy" width="400" data-modal-img> 
+                            </figure>
+                        </div>
+                        <div class="modal-content">
+                            <h4 class="h3 modal-title" data-modal-title>Clarichat</h4>
+                            <!-- <time datetime="2023-08-01">Aug 2023</time> -->
+                            <div data-modal-text>
+                                <p>
+                                    [Template] Clarichat is a web application that simulated a behavioural job interview using an AI chatbot. 
+                                    The chatbot will then analyse the user's responses and provide feedback on their performance 
+                                    through multiple statistics. The application was built using React.js, Node.js, Firebase and 
+                                    integrating ChatGPT API to simulate interviews with contextual responses to 50+ questions based 
+                                    on the chosen role/position. 
+                                </p>
+                                <p>
+                                    [Template] GitHub Link: <a href="https://github.com/jasuovu" class="portfolio-link" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-github"></ion-icon></a>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+             </article>
+            <!-- contact section -->
+             <article class="contact" data-page="contact">
+                <header>
+                    <h2 class="h2 article-title">Contact</h2>
+                </header>
+                <section class="mapbox" data-mapbox>
+                    <figure>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252143.6480783678!2d150.96609624657495!3d-
+                        33.86602913383787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129838f39a743f%3A0x3017d681632a850!
+                        2sSydney%20NSW!5e0!3m2!1sen!2sau!4v1741393708231!5m2!1sen!2sau" 
+                        width="400" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </figure>
+                </section>
+                <section class="contact-form">
+                    <h3 class="h3 form-title">Contact Form</h3>
+                    <form action="https://api.web3forms.com/submit" method="POST" class="form" data-form>
+                        <input type="hidden" name="access_key" value="c33bc922-7602-4bb8-a8f9-d95aae9fa9bf">
+                        <div class="input-wrapper">
+                            <input type="text" name="name" class="form-input" placeholder="Full Name" required data-form-input>
+                            <input type="email" name="email" class="form-input" placeholder="Email Address" required data-form-input>
+                        </div>
+                        <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+                        <!-- Honeypot Spam Protection -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        <button class="form-btn" type="submit" disabled data-form-btn>
+                            <ion-icon name="send"></ion-icon>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </section>
+             </article>
+         </div>
+    </main>
+
+    <!-- custom js link -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- ionicon link -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
