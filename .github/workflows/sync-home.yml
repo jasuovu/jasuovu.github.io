@@ -17,17 +17,17 @@ jobs:
       env:
         TOKEN: ${{ secrets.PAT }}
       run: |
-        # Clone the 'home' repo
-        git clone https://jasuovu:$TOKEN@github.com/jasuovu/home.git
+        # Clone the 'home' repo into a temporary directory
+        git clone https://jasuovu:$TOKEN@github.com/jasuovu/home.git /tmp/home
 
         # Remove the existing files in the home directory
-        rm -rf home/*
+        rm -rf /tmp/home/*
 
-        # Copy all files from the current repo to 'home/' excluding the 'home' directory itself
-        rsync -av --exclude 'home' ./ home/
+        # Copy the current repo's content into the 'home' repo folder
+        cp -r ./* /tmp/home/
 
         # Go into the 'home' directory
-        cd home
+        cd /tmp/home
 
         # Configure Git
         git config user.name "jasuovu"
