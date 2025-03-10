@@ -1,0 +1,26 @@
+name: Sync Home Repo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout source repo
+      uses: actions/checkout@v3
+
+    - name: Clone the 'home' repo
+      run: |
+        git clone https://github.com/jasuovu/home.git
+        rm -rf home/*
+        cp -r ./* home/
+        cd home
+        git config user.name "jasuovu"
+        git config user.email "jasuovu@gmail.com"
+        git add .
+        git commit -m "Sync from jasuovu.github.io"
+        git push
