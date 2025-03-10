@@ -14,8 +14,10 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Clone the 'home' repo
+      env:
+        TOKEN: ${{ secrets.PAT }}
       run: |
-        git clone https://github.com/jasuovu/home.git
+        git clone https://jasuovu:$TOKEN@github.com/jasuovu/home.git
         rm -rf home/*
         cp -r ./* home/
         cd home
