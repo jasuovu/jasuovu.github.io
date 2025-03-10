@@ -20,12 +20,12 @@ jobs:
         # Clone the 'home' repo
         git clone https://jasuovu:$TOKEN@github.com/jasuovu/home.git
 
-        # Remove the existing files in the home directory to avoid conflicts
+        # Remove the existing files in the home directory
         rm -rf home/*
 
-        # Copy the content of the current repo to 'home/' (but avoid copying the 'home/' directory itself)
-        cp -r ./* home/
-        
+        # Copy all files from the current repo to 'home/' excluding the 'home' directory itself
+        rsync -av --exclude 'home' ./ home/
+
         # Go into the 'home' directory
         cd home
 
