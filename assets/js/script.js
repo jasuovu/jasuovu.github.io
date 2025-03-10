@@ -22,10 +22,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const month = currentDate.toLocaleString('default', { month: 'long' });
     const year = currentDate.getFullYear();
 
-    // Calculate days since programming started (February 21, 2021)
-    const startDate = new Date('2021-02-21'); // Start date
-    const timeDifference = currentDate - startDate; // Difference in milliseconds
-    const daysSinceProgramming = Math.floor(timeDifference / (1000 * 60 * 60 * 24)); // Convert to days
+    // calculate days since programming started (February 21, 2021)
+    const startDate = new Date('2021-02-21'); 
+    const timeDifference = currentDate - startDate; 
+    const daysSinceProgramming = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
 
     const text = 
     `Hi, I’ve just graduated from UTS studying a Bachelor of Computer Science majoring in Enterprise Systems Development and achieving First-Class Honours. I have experience working on several CS projects, from building an AI-powered web app to conducting original academic research for my honours. Starting a career in tech has always been a dream since I was little because it represents the perfect opportunity to combine my passion for learning and of course tech.
@@ -42,21 +42,21 @@ document.addEventListener("DOMContentLoaded", function() {
   
     const typingTextElement = document.getElementById("typing-text");
     let index = 0;
-    const speed = 5; // Adjust typing speed (in milliseconds)
+    const speed = 5; // adjust typing speed (in milliseconds)
 
     function typeWriter() {
         if (index < text.length) {
-            // Check if the current character is a newline
+            // check if the current character is a newline
             if (text.charAt(index) === '\n') {
-                // Close the current paragraph and start a new one
+                // close the current paragraph and start a new one
                 typingTextElement.innerHTML += '</p><p>';
             } else {
-                // Add the current character
+                // add the current character
                 typingTextElement.innerHTML += text.charAt(index);
             }
-            // Add the cursor after the current character
+            // add the cursor after the current character
             typingTextElement.innerHTML += '<span class="cursor">&#8203;</span>';
-            // Remove the cursor from the previous character
+            // remove the cursor from the previous character
             const previousCursor = typingTextElement.querySelector('.cursor:not(:last-child)');
             if (previousCursor) {
                 previousCursor.remove();
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
             index++;
             setTimeout(typeWriter, speed);
         } else {
-            // Add blinking animation to the final cursor
+            // add blinking animation to the final cursor
             const finalCursor = typingTextElement.querySelector('.cursor');
             if (finalCursor) {
                 finalCursor.classList.add('blinking');
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Start with an opening <p> tag (no initial cursor)
+    // start with an opening <p> tag (no initial cursor)
     typingTextElement.innerHTML = '<p>';
     typeWriter();
   });
@@ -161,12 +161,12 @@ modalCloseBtn.addEventListener("click", projectsModalFunc);
 overlay.addEventListener("click", projectsModalFunc);
 
 
-// Contact form variables
+// contact form variables
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
 const formBtn = document.querySelector("[data-form-btn]");
 
-// Enable submit button when inputs are valid
+// enable submit button when inputs are valid
 for (let i = 0; i < formInputs.length; i++) {
     formInputs[i].addEventListener("input", function () {
         if (form.checkValidity()) {
@@ -177,11 +177,11 @@ for (let i = 0; i < formInputs.length; i++) {
     });
 }
 
-// Form submission handler
+// form submission handler
 form.addEventListener("submit", async function (event) {
-    event.preventDefault(); // Prevent default form submission
+    event.preventDefault(); // prevent default form submission
 
-    formBtn.innerHTML = "Sending..."; // Show loading state
+    formBtn.innerHTML = "Sending..."; // show loading state
     formBtn.setAttribute("disabled", "");
 
     const formData = new FormData(form);

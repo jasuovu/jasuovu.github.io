@@ -127,17 +127,17 @@ body {
 }
 
 body::before {
-    content: ""; /* Required for pseudo-elements */
+    content: "";
     background-image: url('../images/wallpaper2.jpg');
-    background-size: cover; /* Ensure the image covers the entire screen */
-    background-position: center; /* Center the image */
+    background-size: cover;
+    background-position: center; 
     opacity: 0.2; 
-    position: fixed; /* Position the pseudo-element absolutely */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    z-index: 2; /* Place it behind the content */
+    width: 100%;
+    height: 100%;
+    z-index: 2;
     pointer-events: none;
   }
 
@@ -281,10 +281,10 @@ main {
 }
 
 .main-content {
-    position: relative; /* Ensure navbar stays inside */
-    width: 90%; /* Allows it to shrink */
-    max-width: 950px; /* Controls max width */
-    margin: auto; /* Centers it */
+    position: relative; 
+    width: 90%; 
+    max-width: 950px; 
+    margin: auto; 
 }
 
 /* Sidebar */
@@ -474,8 +474,8 @@ main {
 }
 
 #typing-text p {
-    margin: 0; /* Remove default margin */
-    margin-bottom: 15px; /* Add spacing between paragraphs */
+    margin: 0;
+    margin-bottom: 15px; 
 }
 
 .about-text p { margin-bottom: 15px; }
@@ -629,9 +629,9 @@ main {
     box-shadow: var(--shadow-3);
     z-index: 1;
     transition: var(--transition-1);
-    margin-left: auto; /* Center the button horizontally */
-    margin-right: auto; /* Center the button horizontally */
-    margin-top: 25px; /* Keep the top margin */
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 25px; 
 }
 
  .resume-download::before {
@@ -938,7 +938,7 @@ main {
  }
 
  .portfolio-link ion-icon {
-    vertical-align: middle; /* Ensure the icon is vertically aligned with the text */
+    vertical-align: middle; 
     transform: translateY(7px); 
     color: var(--light-gray-70);
     font-size: 28px;
