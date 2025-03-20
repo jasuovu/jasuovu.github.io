@@ -141,6 +141,29 @@ body::before {
     pointer-events: none;
   }
 
+/* Custom Scrollbar */
+body {
+    overflow-y: scroll; /* Always show the scrollbar */
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--eerie-black-2); /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--onyx); /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Roundness of the scrollbar thumb */
+    border: 3px solid var(--eerie-black-2); /* Padding around the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--jet); /* Color of the scrollbar thumb on hover */
+}
+
 
 
 /* Reused Style */
