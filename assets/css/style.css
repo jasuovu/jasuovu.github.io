@@ -1,3 +1,9 @@
+/** 
+* Wallpaper Artwork by: 周憂
+* Source: https://www.pixiv.net/en/artworks/89206202
+* I do not own this artwork, all rights belong to the original artist
+**/
+
 :root {
     /** 
     * Color 
@@ -131,7 +137,7 @@ body::before {
     background-image: url('../images/wallpaper2.jpg');
     background-size: cover;
     background-position: center; 
-    opacity: 0.2; 
+    opacity: 0.3; 
     position: fixed;
     top: 0;
     left: 0;
@@ -460,6 +466,7 @@ main {
     background: hsla(240, 1%, 17%, 0.75);
     backdrop-filter: blur(10px);
     border: 1px solid var(--jet);
+    opacity: 0.9;
     z-index: 5;
 }
 
