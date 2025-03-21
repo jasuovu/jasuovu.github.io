@@ -127,18 +127,18 @@ for (let i = 0; i < filterBtn.length; i++) {
     });
 }
 
-// project modal
+// project modal: select all project items, modal container, close button, and overlay
 const projectsItem = document.querySelectorAll("[data-filter-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
 const overlay = document.querySelector("[data-overlay]");
 
-// modal variable
+// modal variable: select elements within the modal to display project details
 const modalImg = document.querySelector("[data-modal-img]");
 const modalTitle = document.querySelector("[data-modal-title]");
 const modalText = document.querySelector("[data-modal-text]");
 
-// modal toggle function
+// modal toggle function: function to toggle the modal visibility
 const projectsModalFunc = function () {
     modalContainer.classList.toggle("active");
     overlay.classList.toggle("active");
@@ -147,11 +147,14 @@ const projectsModalFunc = function () {
 // add click event to all modal items
 for (let i = 0; i < projectsItem.length; i++) {
     projectsItem[i].addEventListener("click", function() {
+        event.preventDefault();  // bug fix: prevent anchor tag from scrolling to top
+        // populate the modal with the clicked project's details
         modalImg.src = this.querySelector("[data-project-img]").src;
         modalImg.alt = this.querySelector("[data-project-img]").alt;
         modalTitle.innerHTML = this.querySelector("[data-project-title]").innerHTML;
         modalText.innerHTML = this.querySelector("[data-project-text]").innerHTML;
 
+        // show the modal
         projectsModalFunc();
     });
 }
